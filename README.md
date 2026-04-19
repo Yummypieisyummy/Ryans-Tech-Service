@@ -145,7 +145,7 @@ Edit `tailwind.config.js` or `index.css` to customize colors.
 
 ## Support
 
-For issues or questions, contact: support@ryastechservice.com
+For issues or questions, contact: ryanstechsvc@gmail.com
 
 ## License
 
