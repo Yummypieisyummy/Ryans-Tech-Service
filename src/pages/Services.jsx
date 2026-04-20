@@ -3,12 +3,12 @@ export default function Services() {
     {
       id: 1,
       title: 'Virus & malware removal',
-      description: 'Pop-ups, slow performance, sketchy behavior. I\'ll clean it out and get you running safely again.'
+      description: 'Pop-ups, slow performance, sketchy behavior. I\'ll clean it out and get you running safely again!'
     },
     {
       id: 2,
       title: 'Hardware repair & upgrades',
-      description: 'Bad RAM, failing drives, broken ports. I diagnose it, source the part, and fix it.'
+      description: 'Bad RAM or failing drives? I diagnose it, source the part, and fix it!'
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export default function Services() {
     {
       id: 6,
       title: 'Network setup',
-      description: 'Home wifi giving you trouble or need a new router configured properly? I\'ve got it.'
+      description: 'Home Wi-Fi giving you trouble or need a new router configured properly? I\'ve got it.'
     },
   ];
 
@@ -37,7 +37,7 @@ export default function Services() {
       <div className="mx-auto px-6">
         <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Services</h2>
         <p className="text-gray-600 text-center mb-12 w-full mx-auto">
-          Here's what I can help with. No call centers, no technician roulette — just me, showing up and getting it done.
+          Here's some of the services I offer. No call centers, no technician roulette. It's just me showing up and getting it done.
         </p>
         
         <div className="grid md:grid-cols-3 gap-8">

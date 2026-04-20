@@ -37,8 +37,11 @@ export default function Hero() {
         }`}
       >
         <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 text-center">
-          Ryan's Tech Service - local computer help done right.
+          Ryan's Tech Service
         </h2>
+        <h3 className="text-3xl md:text-4xl text-gray-900 mb-12 text-center">
+          Local computer help done right!
+        </h3>
         <div className="flex flex-col items-center">
           <p className="text-xl text-gray-600 mb-8 max-w-2xl text-center">
              I'm Ryan, a CS grad based in Western PA. Whether your PC is acting up, you need a new one set up, or something just isn't working the way it should, I'll come to you and fix it without the big box prices or the runaround.
