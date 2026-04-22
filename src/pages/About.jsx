@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">About</h2>
         
-        <div className="space-y-6 text-gray-600 text-lg">
+        <div className="space-y-6 text-gray-600 text-lg indent-8">
           <p>
             I'm Ryan, a Western PA local finishing college with a Computer Science degree. I began working with computers before I can remember, and I built my first PC when I was 16. Since then, I've continued to gain hands-on experience fixing computers for people in the community. I started doing tech work through word of mouth because people needed someone they could trust, not a stranger at a help desk or Joe Schmoe from the Geek Squad.
           </p>

@@ -40,7 +40,7 @@ export default function Hero() {
           Ryan's Tech Service
         </h2>
         <h3 className="text-3xl md:text-4xl text-gray-900 mb-12 text-center">
-          Computer repair and support, right at you door.
+          Computer repair and support, right at your door.
         </h3>
         <div className="flex flex-col items-center">
           <p className="text-xl text-gray-600 mb-8 max-w-2xl text-center">
