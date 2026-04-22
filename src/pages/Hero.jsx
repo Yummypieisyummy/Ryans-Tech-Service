@@ -40,11 +40,14 @@ export default function Hero() {
           Ryan's Tech Service
         </h2>
         <h3 className="text-3xl md:text-4xl text-gray-900 mb-12 text-center">
-          Local computer help done right!
+          Computer repair and support, right at you door.
         </h3>
         <div className="flex flex-col items-center">
           <p className="text-xl text-gray-600 mb-8 max-w-2xl text-center">
-             I'm Ryan, a CS grad based in Western PA. Whether your PC is acting up, you need a new one set up, or something just isn't working the way it should, I'll come to you and fix it without the big box prices or the runaround.
+             Hi! I'm Ryan!
+          </p>
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl text-center">
+            I am a computer science graduate looking to start a local business providing computer repair, technical support, and software development services in Western PA. Whether your PC is acting up, you need a new one set up, or something just isn't working the way it should, I'll come to you and fix it.
           </p>
           <Button
             onClick={() => scrollToSection('contact')}
