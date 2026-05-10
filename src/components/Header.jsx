@@ -1,19 +1,27 @@
+
 import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Button from '../ui/button';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/', { state: { scrollTo: sectionId } });
+      setIsMenuOpen(false);
+      return;
+    }
     const element = document.getElementById(sectionId);
     if (element) {
       const header = document.querySelector('header');
       const headerHeight = header ? header.offsetHeight : 80;
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-      
       window.scrollTo({
         top: elementPosition - headerHeight,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
       setIsMenuOpen(false);
     }
@@ -23,7 +31,6 @@ export default function Header() {
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <nav className="mx-auto px-6 py-4 flex items-center justify-around gap-8">
         <h1 className="text-3xl font-bold text-gray-900">Ryan's Tech Service</h1>
-        
         <Button
           variant="icon"
           size="md"
@@ -34,7 +41,6 @@ export default function Header() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </Button>
-
         <ul className={`absolute left-0 right-0 top-full bg-white border-b border-gray-200 flex-col gap-4 px-6 py-4 items-center justify-center md:static md:flex md:flex-row md:border-0 md:bg-transparent md:p-0 md:gap-8 md:items-center md:justify-start ${isMenuOpen ? 'flex' : 'hidden'}`}>
           <li>
             <Button
@@ -61,6 +67,15 @@ export default function Header() {
               onClick={() => scrollToSection('about')}
             >
               About
+            </Button>
+          </li>
+          <li>
+            <Button
+              variant="textOnly"
+              size="lg"
+              onClick={() => { navigate('/portfolio'); setIsMenuOpen(false); }}
+            >
+              Portfolio
             </Button>
           </li>
           <li>
