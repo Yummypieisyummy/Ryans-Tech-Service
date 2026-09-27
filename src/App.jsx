@@ -47,10 +47,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          {/* <Route path="/portfolio" element={<Portfolio />} /> */}
         </Routes>
         <footer className="bg-gray-900 text-white py-8 text-center">
-          <p>&copy; 2026 Ryan's Tech Service. Western PA.</p>
+          <p>&copy; 2026 RJB Tech Services. New Alexandria, PA</p>
         </footer>
       </div>
     </Router>
